@@ -6,7 +6,7 @@ weights_path: "Weights/yolov8n.pt"
 
 # Vehicle classes to count (must match YOLO class names)
 classes_to_count: ["car", "truck", "motorbike", "bus"]
-confidence_threshold: 0.3
+confidence_threshold: 0.5
 
 # Counting line (x1, y1, x2, y2)
 count_line: [199, 363, 1208, 377]
@@ -23,3 +23,25 @@ signal:
   normal_red_timer: 60
   reduced_red_timer: 30
   cooldown_duration: 10
+  
+# Category-specific thresholds (optional)
+category_thresholds:
+  car: 8
+  truck: 3
+  bus: 2
+  motorbike: 5
+
+# Size-based classification correction (in pixels)
+size_thresholds:
+  car: 
+    min_area: 1000
+    max_area: 50000
+  bus: 
+    min_area: 15000
+    max_area: 100000
+  truck: 
+    min_area: 8000
+    max_area: 80000
+  motorbike: 
+    min_area: 500
+    max_area: 15000
