@@ -128,7 +128,8 @@ def main():
     ]
 
     # Load region mask
-    region_mask = cv2.imread(cfg["mask_path"]) if cfg.get("mask_path") else None
+    mask_path = cfg.get("mask_path")
+    region_mask = cv2.imread(mask_path) if mask_path and mask_path.strip() else None
 
     # Initialize tracker
     tracker_params = cfg.get("tracker", {})
@@ -187,7 +188,12 @@ def main():
             break
 
         if region_mask is not None:
-            masked_frame = cv2.bitwise_and(frame, region_mask)
+            # Check if mask and frame dimensions match
+            if frame.shape[:2] != region_mask.shape[:2]:
+                print(f"Warning: Frame size {frame.shape[:2]} doesn't match mask size {region_mask.shape[:2]}. Using frame without mask.")
+                masked_frame = frame
+            else:
+                masked_frame = cv2.bitwise_and(frame, region_mask)
         else:
             masked_frame = frame
 
