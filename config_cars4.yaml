@@ -1,14 +1,14 @@
-# Configuration for ATSM vehicle counting demo
+# Configuration for ATSM vehicle counting demo - cars4.mp4
 
-video_path: "Media/cars2.mp4"
-mask_path: "Media/mask.png"
+video_path: "Media/cars4.mp4"
+# mask_path: "Media/mask.png"  # Disabled for cars4.mp4
 weights_path: "Weights/yolov8n.pt"
 
 # Vehicle classes to count (must match YOLO class names)
 classes_to_count: ["car", "truck", "motorbike", "bus"]
-confidence_threshold: 0.5
+confidence_threshold: 0.6
 
-# Counting line (x1, y1, x2, y2)
+# Counting line (x1, y1, x2, y2) - will need adjustment for cars4.mp4
 count_line: [199, 363, 1208, 377]
 
 # SORT tracker parameters
@@ -51,10 +51,10 @@ adaptive_timing:
   enabled: true
   lanes:
     - name: "North"
-      count_line: [199, 400, 700, 400]  # Moved higher up
+      count_line: [199, 363, 1208, 377]
       weight: 1.0
     - name: "South" 
-      count_line: [1000, 400, 1300, 400]  # Moved lower down
+      count_line: [199, 400, 1208, 414]
       weight: 1.0
     # - name: "East"
     #   count_line: [199, 200, 1208, 300]

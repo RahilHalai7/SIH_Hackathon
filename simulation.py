@@ -15,7 +15,7 @@ currentGreen = 0   # which signal is green currently
 nextGreen = (currentGreen + 1) % noOfSignals
 currentYellow = 0  # is yellow signal active?
 
-speeds = {'car': 2.25, 'bus': 1.8, 'truck': 1.8, 'bike': 2.5}
+speeds = {'car': 1.25, 'bus': 0.9, 'truck': 0.9, 'bike': 1.25}
 
 # Spawn coordinates
 x = {
