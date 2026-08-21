@@ -1,6 +1,7 @@
 import random
 import time
 import threading
+# pyrefly: ignore [missing-import]
 import pygame
 import sys
 
