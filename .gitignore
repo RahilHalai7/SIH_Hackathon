@@ -4,11 +4,25 @@ __pycache__/
 *.egg-info/
 .venv/
 .env
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# VS Code
+# VS Code / IDE
 .vscode/
+.idea/
 
-# Data & weights (keep directory, ignore large files)
+# Large media & alternate weights (keep directory READMEs)
+assets/media/*.avi
+assets/media/*.mov
+assets/media/*.mkv
+assets/media/*.mp4
+assets/media/*.MP4
+assets/media/*.json
+assets/models/*.pt
+!assets/models/yolov8n.pt
+
+# Legacy paths (pre-restructure)
 Media/*.avi
 Media/*.mov
 Media/*.mkv

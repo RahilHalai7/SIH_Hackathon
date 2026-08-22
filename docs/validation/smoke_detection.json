@@ -1,0 +1,25 @@
+{
+  "frames_processed": 3,
+  "total_detections": 40,
+  "tracked_objects_peak": 15,
+  "vehicle_counts": {
+    "car": 0,
+    "truck": 0,
+    "motorbike": 0,
+    "bus": 0
+  },
+  "lane_counts": {
+    "North": 0,
+    "South": 0
+  },
+  "adaptive_green_times": {
+    "North": 30,
+    "South": 30
+  },
+  "errors": [],
+  "warnings": [
+    "Mask/frame dimension mismatch."
+  ],
+  "runtime_seconds": 0.945,
+  "fps": 3.17
+}

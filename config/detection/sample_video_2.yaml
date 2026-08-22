@@ -1,0 +1,38 @@
+video_path: "assets/media/sample_video_2.mp4"
+mask_path: ""
+weights_path: "assets/models/yolov8n.pt"
+
+classes_to_count: ["car", "truck", "motorbike", "bus"]
+confidence_threshold: 0.3
+count_line: [50, 720, 1870, 720]
+count_line_tolerance: 36
+
+display:
+  max_width: 960
+  max_height: 540
+
+tracker:
+  max_age: 20
+  min_hits: 3
+  iou_threshold: 0.3
+
+signal:
+  car_count_threshold: 10
+  normal_red_timer: 60
+  reduced_red_timer: 30
+  cooldown_duration: 10
+
+adaptive_timing:
+  enabled: true
+  lanes:
+    - name: "Left"
+      count_line: [50, 720, 920, 720]
+      weight: 1.0
+    - name: "Right"
+      count_line: [1060, 740, 1870, 740]
+      weight: 1.0
+  base_green_time: 30
+  max_green_time: 60
+  min_green_time: 15
+  traffic_weight_multiplier: 2.0
+  update_interval: 5

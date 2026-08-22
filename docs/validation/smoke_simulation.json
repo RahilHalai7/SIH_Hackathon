@@ -1,0 +1,24 @@
+{
+  "frames_processed": 60,
+  "vehicles_spawned": 3,
+  "vehicles_completed": 0,
+  "signal_switches": 0,
+  "queue_lengths": {
+    "right": 0,
+    "down": 1,
+    "left": 1,
+    "up": 1
+  },
+  "adaptive_green_times": {
+    "right": 8,
+    "down": 8,
+    "left": 8,
+    "up": 8
+  },
+  "warnings": [],
+  "limitations": [
+    "Simulation uses synthetic spawn rates, not live detector counts.",
+    "Vehicle-to-vehicle collision avoidance and lane discipline are not modeled.",
+    "Legacy four-way timing scripts remain for reference only."
+  ]
+}

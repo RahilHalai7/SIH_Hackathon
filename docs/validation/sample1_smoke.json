@@ -1,0 +1,23 @@
+{
+  "frames_processed": 40,
+  "total_detections": 92,
+  "tracked_objects_peak": 3,
+  "vehicle_counts": {
+    "car": 1,
+    "truck": 0,
+    "motorbike": 0,
+    "bus": 0
+  },
+  "lane_counts": {
+    "Left": 0,
+    "Right": 1
+  },
+  "adaptive_green_times": {
+    "Left": 15,
+    "Right": 60
+  },
+  "errors": [],
+  "warnings": [],
+  "runtime_seconds": 5.625,
+  "fps": 7.11
+}

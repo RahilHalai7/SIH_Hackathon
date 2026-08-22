@@ -1,0 +1,38 @@
+{
+  "default": {
+    "frames_processed": 6,
+    "total_detections": 64,
+    "tracked_objects_peak": 15,
+    "vehicle_counts": {
+      "car": 0,
+      "truck": 0,
+      "motorbike": 0,
+      "bus": 0
+    },
+    "lane_counts": {
+      "North": 0,
+      "South": 0
+    },
+    "adaptive_green_times": {
+      "North": 30,
+      "South": 30
+    },
+    "errors": [],
+    "warnings": [
+      "Mask/frame dimension mismatch."
+    ],
+    "runtime_seconds": 1.513,
+    "fps": 3.97
+  },
+  "cars4": {
+    "frames_processed": 0,
+    "total_detections": 0,
+    "errors": [
+      "Test video missing: assets/media/cars4.mp4"
+    ],
+    "warnings": [
+      "Place the optional cars4.mp4 under assets/media/ to enable this validation path."
+    ],
+    "skipped": true
+  }
+}

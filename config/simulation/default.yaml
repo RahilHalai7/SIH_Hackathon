@@ -1,0 +1,30 @@
+window:
+  width: 1000
+  height: 584
+  fps: 30
+
+spawn:
+  interval_frames: 24
+  max_active_vehicles: 32
+
+signal:
+  base_green_time: 8
+  yellow_time: 2
+  min_green_time: 4
+  max_green_time: 14
+
+adaptive_timing:
+  enabled: true
+  lanes:
+    - name: "right"
+      weight: 1.0
+    - name: "down"
+      weight: 1.0
+    - name: "left"
+      weight: 1.0
+    - name: "up"
+      weight: 1.0
+  base_green_time: 8
+  min_green_time: 4
+  max_green_time: 14
+  traffic_weight_multiplier: 1.5
